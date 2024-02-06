@@ -1,31 +1,43 @@
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #3498db;
+    background-color: #003366;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    border-radius: 15px; /* Adição de bordas arredondadas */
+    border-bottom: 2px solid #002155;
+    border-radius: 15px 15px 0 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 section {
     margin: 20px;
-    border-radius: 15px; /* Adição de bordas arredondadas */
+    border-radius: 15px;
     background-color: #fff;
     color: #333;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+#calculator img {
+    max-width: 100% !important;
+    height: auto !important;
+}
 
 #calculator h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #003366;
 }
 
 form {
@@ -40,12 +52,13 @@ label {
 
 input {
     padding: 10px;
-    width: 100%;
+    width: calc(100% - 20px);
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 button {
-    background-color: #3498db;
+    background-color: #003366;
     color: #fff;
     padding: 15px 30px;
     border: none;
@@ -57,7 +70,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #002155;
 }
 
 #result {
@@ -65,16 +78,38 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
     color: #333;
+    transition: opacity 0.5s ease;
+}
+
+#result p {
+    margin-bottom: 10px;
+}
+
+#result.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#result:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 #convincing, #why-choose-us {
-    background-color: #3498db;
+    background-color: #003366;
     color: #fff;
+}
+#contact{
+    font-size: 18px;
 }
 
 #contact, #authorization, #bank-phrases {
     background-color: #ecf0f1;
     color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 #authorization, #bank-phrases {
@@ -87,7 +122,7 @@ button:hover {
 }
 
 footer {
-    background-color: #34495e;
+    background-color: #003366;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -95,5 +130,38 @@ footer {
     bottom: 0;
     width: 100%;
     font-weight: bold;
-    border-radius: 15px; /* Adição de bordas arredondadas */
+    border-radius: 0 0 15px 15px;
+}
+
+#result.hidden {
+    display: none;
+}
+
+#contact-info {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#contact-info img {
+    vertical-align: middle; /* Alinha verticalmente a imagem no texto */
+}
+
+#contact-info a {
+    color: #0cec53; /* Adapte a cor do link conforme necessário */
+}
+#calculator img {
+    width: 100%;
+    height: auto;
+    display: block; /* Certifica-se de que a imagem é exibida como bloco */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+#contact-info2 {
+    background-color: #003366;
+    color: #fff;
+    font-size: 18px;
 }

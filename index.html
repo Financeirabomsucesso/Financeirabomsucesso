@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicom.ico" type="image/x-icon"> <!-- Adicione essa linha para o favicon -->
+    <link rel="icon" href="favicom.ico" type="image/x-icon">
     <title>Financeira Bom Sucesso crédito para todos.</title>
 </head>
 <body>
 
     <header>
         <h1>Financeira Bom Sucesso</h1>
+        <h2>Negativados, aposentados inss, assalariados e autônomos.</h2>
     </header>
 
     <section id="calculator">
-        <img src="imagem.jpg" alt="Imagem de Simulação de Crédito">
+        <img src="imagem.png" alt="Imagem de Simulação de Crédito">
         <h2>Simule seu empréstimo agora</h2>
-    
 
         <form id="loanForm">
             <label for="creditAmount">Valor desejado:</label>
@@ -28,14 +28,11 @@
             <button type="button" onclick="calculateLoan()">Simular empréstimo</button>
         </form>
 
-        <div id="result">
+        <div id="result" class="hidden">
             <h3>Resultado da simulação</h3>
             <p id="totalAmount">Total do empréstimo: R$ 0,00</p>
             <p id="monthlyInstallment">Parcela mensal: R$ 0,00</p>
             <p>Primeira parcela para fevereiro de 2024</p>
-
-            <p>Solicite informações ou contrate pelo WhatsApp: <img src="whatzapp.png" alt="Ícone do WhatsApp"> <a href="https://wa.me/5531999798564" target="_blank">(31) 99979-8564</a></p>
-            <p>ou pelo 0800 9979 8564</p>
         </div>
     </section>
 
@@ -63,12 +60,21 @@
         </ul>
     </section>
 
+    <section id="contact-info">
+        <p>Os produtos mencionados estão sujeitos à aprovação de crédito e cadastro e podem ser contratados de maneira independente.</p>
+
+        <p>Utilize o crédito de forma consciente. Sujeito à aprovação de crédito e disponibilização de limite de conta. Necessário cadastrar e manter uma chave Pix, CPF ou Celular em uma conta.</p>
+            
+        <p>Benefícios disponíveis para clientes que contratarem o pacote de empréstimo em nossa agencia, se for via canal digital, e cumprirem as regras conforme regulamento. Caso as regras do regulamento não sejam cumpridas, será cobrada a tarifa integral do pacote no valor de R$ 54,90.</p>
+    </section>
+
+
     <section id="contact">
         <h2>Entre em contato para obter mais informações</h2>
-        <p>Solicite informações ou contrate pelo WhatsApp: <img src="whatzapp.png" alt="Ícone do WhatsApp"> <a href="https://wa.me/5531999798564" target="_blank">(31) 99979-8564</a></p>
+        <p>Contrate pelo WhatsApp:<img src="whatzapp.png" alt="Ícone do WhatsApp"> <a href="https://wa.me/5531999798564" target="_blank">CLIQUE AQUI E SERÁ DIRECIONADO PARA NOSSA EQUIPE</a></p>
         <p>Telefone: (31) 99979-8564</p>
-        <p>ou pelo 0800 9979 8564</p>
-
+        <p>pelo 0800 9979 8564</p>
+        <p>ou pelo email: Financeirabomsucesso@gmail.com </p>
         <p>Endereço: Praça da Liberdade, 450 - Savassi, Belo Horizonte</p>
     </section>
 
@@ -83,10 +89,11 @@
         <p>Segurança e confiança: pilares da nossa relação com você.</p>
         <p>Seu futuro financeiro está em boas mãos, escolha a Bom Sucesso!</p>
         <p>Transparência em cada transação, comprometimento em cada interação.</p>
+        <p>© 2024 Finaneira Bom Sucesso (Brasil) S.A., CNPJ: 90.400.888/0001-47</p>
     </section>
 
     <footer>
-        <p>&copy; 2023 Financeira Bom Sucesso. Todos os direitos reservados.</p>
+        <p>&copy; Contrate pelo WhatsApp:  <img src="whatzapp.png" alt="Ícone do WhatsApp"> <a href="https://wa.me/5531999798564" id="contact-info2" target="_blank">CLIQUE AQUI E SERÁ DIRECIONADO PARA NOSSA EQUIPE</a></p>
     </footer>
 
     <script src="script.js"></script>
